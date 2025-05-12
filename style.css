@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#quoteList {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    max-height: 500px; /* Limit height and make scrollable */
+    overflow-y: auto; /* Add scroll if content overflows */
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+#quoteList li {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 5px; /* Optional: adds space between items */
+    font-style: italic;
+    color: #555;
+}
+
+#quoteList li:last-child {
+    border-bottom: none;
+}
+
+#quoteList li strong { /* Style the author part if added */
+    display: block;
+    font-style: normal;
+    color: #333;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+
+.error-message {
+    color: #d9534f; /* Bootstrap danger color */
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: none; /* Hidden by default */
+}
